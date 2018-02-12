@@ -2,11 +2,25 @@
 1. bash
 2. tmux
 3. vim
+4. ctags
+5. cscope
+6. taglist
+7. nerdtree
+8. srcexpl
+9. trinity
 
-# Installation
-1. Copy `autoload`, `bundle`, `colors` and `.vimrc` to home directory.
-2. Install [Base16 Shell](https://github.com/chriskempson/base16-shell)
-3. Install [Base16 Vim](https://github.com/chriskempson/base16-vim)
+# Usage
+```
+// ctags
+$ ctags -R
+
+vim> set tags=./tags
+vim> <ctrl-]>
+vim> <ctrl-t>
+
+// cscope
+$ cscope -Rbqk
+```
 
 # Reference
 * [tmux cheatsheet](https://gist.github.com/MohamedAlaa/2961058)
