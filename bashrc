@@ -1,13 +1,12 @@
+# ls alias
+alias ll="ls -Alh"
+alias lsd="ls -AlF | grep /$"
 
-# Set CLICOLOR if you want Ansi Colors in iTerm2
-export CLICOLOR=1
+# Show disk usage
+alias diskspace="du -S | sort -n -r | less"
 
-# Set colors to match iTerm2 Terminal Colors
+# Set 256 colors
 export TERM=xterm-256color
-
-# base16-shell setting
-BASE16_SHELL=$HOME/.config/base16-shell/
-[ -n "$PS1" ] && [ -s $BASE16_SHELL/profile_helper.sh ] && eval "$($BASE16_SHELL/profile_helper.sh)"
 
 # Set color prompt
 PS1='\[\e[0;33m\]\u\[\e[0m\]@\[\e[0;32m\]\h\[\e[0m\]:\[\e[0;34m\]\w\[\e[0m\]\$ '
