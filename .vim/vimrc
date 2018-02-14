@@ -68,8 +68,9 @@ set ic
 set smartcase
 
 "set color scheme
-set t_Co=256
 colorscheme molokai
+set term=screen-256color
+set t_Co=256
 
 "make <c-l> clear the highlight as well as redraw
 nnoremap <C-L> :nohls<CR><C-L>

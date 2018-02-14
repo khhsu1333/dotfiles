@@ -1,13 +1,23 @@
+# Environment
+* Terminal: Termius
+* Shell: bash
+* Editor: vim
+
 # Tool
-1. bash
-2. tmux
-3. vim
-4. ctags
-5. cscope
-6. taglist
-7. nerdtree
-8. srcexpl
-9. trinity
+* base16
+* tmux
+* ctags
+* cscope
+
+# Vim plugin
+* taglist
+* srcexpl
+* trinity
+
+# Installation
+```
+$ git clone https://github.com/chriskempson/base16-shell.git ~/.config/base16-shell
+```
 
 # Usage
 ```
@@ -22,5 +32,9 @@ vim> <ctrl-t>
 $ cscope -Rbqk
 ```
 
+# Utility
+* 256color.pl
+
 # Reference
 * [tmux cheatsheet](https://gist.github.com/MohamedAlaa/2961058)
+

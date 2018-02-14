@@ -45,3 +45,12 @@ export TERM=xterm-256color
 # Set color prompt
 export PS1='${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u\[\033[00m\]@\[\033[01;36m\]\h\[\033[00m\]: \[\033[01;34m\]\w\[\033[00m\]\n\$ '
 
+# Set base16-eighties as color theme
+export BASE16_SHELL=$HOME/.config/base16-shell
+[ -n "$PS1" ] && [ -s $BASE16_SHELL/profile_helper.sh ] && eval "$($BASE16_SHELL/profile_helper.sh)"
+base16_eighties
+
+# Set vim as default editor
+export VISUAL=vim
+export EDITOR="$VISUAL"
+
