@@ -30,7 +30,17 @@ vim> <ctrl-]>
 vim> <ctrl-t>
 
 // cscope
-$ cscope -Rbqk
+$ cscope -Rbq
+
+vim> :cs find c|d|e|f|g|i|s|t name
+	c: Find functions calling this function
+	d: Find functions called by this function
+	e: Find this egrep pattern
+	f: Find this file
+	g: Find this definition
+	i: Find files #including this file
+	s: Find this C symbol
+	t: Find assignments to
 ```
 
 # Utility
