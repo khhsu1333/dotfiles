@@ -1,11 +1,10 @@
 # Environment
-* Terminal: Termius
+* Terminal Multiplexer: tmux
 * Shell: bash
 * Editor: vim
 
 # Tool
 * Base16 Shell
-* tmux
 * ctags
 * cscope
 
@@ -22,6 +21,9 @@ $ git clone https://github.com/chriskempson/base16-shell.git ~/.config/base16-sh
 
 # Usage
 ```
+// build index
+$ ./gen.sh
+
 // ctags
 $ ctags -R
 

@@ -101,16 +101,25 @@ let g:netrw_browse_split=4
 let g:netrw_altv=1
 let g:netrw_winsize=20
 
-"augroup netrw_open
-"  autocmd!
-"  autocmd VimEnter * :Vexplore
-"  autocmd VimEnter * :wincmd p
-"augroup END
-"
-"augroup netrw_close
-"  autocmd!
-"  autocmd WinEnter * if winnr('$')==1 && getbufvar(winbufnr(winnr()), "&filetype")=="netrw" | q | endif
-"augroup END
+augroup netrw_open
+  autocmd!
+  autocmd VimEnter * :Vexplore!
+  autocmd VimEnter * :wincmd p
+augroup END
+
+augroup netrw_close
+  autocmd!
+  autocmd WinEnter * if winnr('$')==2 && getbufvar(winbufnr(winnr()), "&filetype")=="netrw" | q | endif
+augroup END
+
+"taglist setup
+nmap <F8> : TlistToggle<CR>
+let Tlist_Auto_Open=1
+let Tlist_Compact_Format=1
+let Tlist_Exit_OnlyWindow=1
+let Tlist_Show_One_File=1
+let Tlist_WinWidth=40
+set ut=100
 
 "ctags setup
 set tags=tags
@@ -134,3 +143,4 @@ nmap ze :cs find e <C-R>=expand("<cword>")<CR><CR>
 nmap zf :cs find f <C-R>=expand("<cfile>")<CR><CR>
 nmap zi :cs find i ^<C-R>=expand("<cfile>")<CR>$<CR>
 nmap zd :cs find d <C-R>=expand("<cword>")<CR><CR>
+
