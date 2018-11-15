@@ -10,9 +10,9 @@
 
 # Vim plugin
 * Base16 Vim
+* gruvbox
 * taglist
-* srcexpl
-* trinity
+* airline
 
 # Installation
 ```

@@ -71,7 +71,10 @@ set smartcase
 set term=screen-256color
 set t_Co=256
 let base16colorspace=256
-colorscheme base16-monokai
+"colorscheme molokai
+"colorscheme base16-monokai
+colorscheme gruvbox
+set background=dark
 
 "make <c-l> clear the highlight as well as redraw
 nnoremap <C-L> :nohls<CR><C-L>
@@ -143,4 +146,8 @@ nmap ze :cs find e <C-R>=expand("<cword>")<CR><CR>
 nmap zf :cs find f <C-R>=expand("<cfile>")<CR><CR>
 nmap zi :cs find i ^<C-R>=expand("<cfile>")<CR>$<CR>
 nmap zd :cs find d <C-R>=expand("<cword>")<CR><CR>
+
+"airline settings
+let g:airline#extensions#tabline#enabled=1
+let g:airline_theme='gruvbox'
 
