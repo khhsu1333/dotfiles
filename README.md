@@ -14,18 +14,16 @@
 * taglist
 * airline
 * ctrlp
+* NERDTree
 
 # Installation
 ```
-$ git clone https://github.com/khhsu1333/linuxrc --recursive
+$ git clone https://github.com/khhsu1333/dotfiles --recursive
 $ git clone https://github.com/chriskempson/base16-shell.git ~/.config/base16-shell
 ```
 
 # Usage
 ```
-// build index
-$ ./gen.sh
-
 // ctags
 $ ctags -R
 
