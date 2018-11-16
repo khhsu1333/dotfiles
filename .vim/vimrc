@@ -128,6 +128,8 @@ autocmd vimenter * NERDTree | wincmd p
 "autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 map <LEADER>ne :NERDTreeToggle<CR>
 let g:NERDTreeWinPos="right"
+let g:NERDTreeShowBookmarks=1
+let g:NERDTreeChDirMode=2
 
 "taglist setup
 nmap <LEADER>t :TlistToggle<CR>
