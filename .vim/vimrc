@@ -176,3 +176,5 @@ nnoremap <C-X> :bn <BAR> bd#<CR>
 nmap <LEADER>b :CtrlPBuffer<CR>
 let g:ctrlp_working_path_mode = 'ra'
 
+"paste without yank
+xnoremap p pgvy
