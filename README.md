@@ -18,7 +18,7 @@
 
 # Installation
 ```
-$ git clone https://github.com/khhsu1333/dotfiles --recursive
+$ git clone https://github.com/khhsu1352/dotfiles --recursive
 $ git clone https://github.com/chriskempson/base16-shell.git ~/.config/base16-shell
 ```
 
@@ -49,5 +49,5 @@ vim> :cs find c|d|e|f|g|i|s|t name
 * 256color.pl
 
 # Reference
+* [vim cheatsheet](https://vim.rtorr.com/)
 * [tmux cheatsheet](https://gist.github.com/MohamedAlaa/2961058)
-
